@@ -1,0 +1,9 @@
+sarifu:
+  container_name: sarifu
+  image: eboraas/apache
+  volumes:
+    -  /var/www/sarifu/:/var/www/html
+  ports:
+    - 57080:80
+  external_links:
+    - mysql:mysql
